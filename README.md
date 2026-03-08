@@ -24,15 +24,20 @@ This environment is designed to mirror the architecture and operational patterns
 ## Virtual Network Architecture
 
 ```text
-          Internet
-             │
-        vSwitch-WAN
-        │          │
-     pfSense-A   pfSense-B
-        │          │
-     vSwitch-SBX  vSwitch-SBY
-        │          │
-     SBX Site     SBY Site
+                Internet
+                   │
+              Home Router
+                   │
+               vSwitch-WAN
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+     pfSense-A             pfSense-B
+        │                     │
+     vSwitch-SBX           vSwitch-SBY
+        │                     │
+     SBX Site              SBY Site
+     Each site has its own internal network and firewall gateway.
 
 --- 
 ## Lab Architecture
