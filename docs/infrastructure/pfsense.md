@@ -118,3 +118,28 @@ VPN troubleshooting
 routing behavior
 
 network segmentation
+
+---
+
+## Deployment Plan
+
+pfSense will act as the network gateway for the lab environment.
+
+Primary responsibilities:
+
+- NAT routing
+- DHCP relay or DHCP service
+- Firewall segmentation
+- Network gateway
+
+Interfaces:
+
+WAN
+Connected to external network
+
+LAN
+Connected to Hyper-V internal switch
+
+Gateway Address:
+
+172.16.50.1
