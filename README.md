@@ -51,3 +51,26 @@ Microsoft Hyper-V
      vSwitch-SBX  vSwitch-SBY
         │          │
      SBX Site     SBY Site
+
+--- 
+## Lab Architecture
+
+The SBXQIAO Enterprise Lab simulates a small multi-site enterprise environment.
+
+```mermaid
+graph TD
+
+Internet --> WAN
+
+WAN --> pfSenseA
+WAN --> pfSenseB
+
+pfSenseA --> SBX
+pfSenseB --> SBY
+
+SBX --> SBX_DC1
+SBX --> SBX_CL1
+SBX --> SBX_LX1
+
+SBY --> SBY_DC1
+SBY --> SBY_CL1
