@@ -141,3 +141,40 @@ Bastion host access
 IDS / IPS systems
 
 Network traffic analysis
+
+---
+
+## Multi-Site Architecture
+
+The SBXQIAO sandbox is designed as a two-site enterprise simulation.
+
+The two sites are hosted on separate physical Hyper-V hosts connected through a home router.
+
+The router only provides Layer-2 transport and internet access.  
+All lab networking is controlled by pfSense routers.
+
+### Physical Layout
+
+Internet  
+↓  
+Home Router / Switch  
+↓  
+Host A (Big PC – Hyper-V)  
+Host B (Mini PC – Hyper-V)
+
+### Logical Layout
+              Internet
+                 │
+           Home Router
+                 │
+          ───── WAN ─────
+            │         │
+        pfSense-A   pfSense-B
+           │           │
+      SBX LAN       SBY LAN
+    172.16.50.0     172.16.60.0
+
+
+SBX and SBY represent two enterprise sites connected through a WAN transport network.
+
+A site-to-site VPN will later connect the two LAN networks.

@@ -132,3 +132,40 @@ Completed:
 Next major milestone:
 
 - Deploy the first live site: `SBX`
+
+---
+
+## Site Model
+
+The lab simulates two enterprise locations.
+
+### Site SBX
+
+Primary infrastructure site hosted on the main Hyper-V workstation.
+
+Subnet:
+
+172.16.50.0/24
+
+Core systems:
+
+- SBX-RTR1 (pfSense)
+- SBX-DC1 (Domain Controller)
+- SBX-CL1 (Windows Client)
+- SBX-LX1 (Linux Server)
+
+### Site SBY (Planned)
+
+Secondary site hosted on a separate mini PC.
+
+Subnet:
+
+172.16.60.0/24
+
+Planned systems:
+
+- pfSense-B
+- SBY-DC1 (Additional Domain Controller)
+- SBY-CL1 (Client workstation)
+
+The SBY site will simulate a remote office connected via a site-to-site VPN.
