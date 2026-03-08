@@ -19,25 +19,7 @@ The purpose of this lab is to develop practical experience with enterprise infra
 
 This environment is designed to mirror the architecture and operational patterns commonly used in enterprise networks.
 
----
 
-## Hardware Platform
-
-Host system used for the lab:
-
-| Component | Specification |
-|----------|---------------|
-| Device | Minisforum MS-A2 |
-| CPU | AMD Ryzen 9 9955HX |
-| RAM | 64 GB |
-| Storage | 2 TB NVMe |
-| Network Interfaces | 2 × 2.5G + 2 × 10G |
-
-Hypervisor platform:
-
-Microsoft Hyper-V
-
----
 
 ## Virtual Network Architecture
 
