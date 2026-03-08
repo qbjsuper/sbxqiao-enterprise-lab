@@ -35,3 +35,23 @@ Example:
 |-----|-----|
 | pfSense-A | Firewall for SBX |
 | pfSense-B | Firewall for SBY |
+
+---
+
+## Machine Naming Standard
+
+Pattern:
+
+SITE-ROLE#
+
+Examples:
+
+SBX-DC1  → Domain controller
+SBX-CL1  → Windows workstation
+SBX-LX1  → Linux server
+SBX-RTR1 → pfSense router
+
+Site prefixes:
+
+SBX → primary lab site  
+SBY → secondary site
