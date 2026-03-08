@@ -19,7 +19,7 @@ The purpose of this lab is to develop practical experience with enterprise infra
 
 This environment is designed to mirror the architecture and operational patterns commonly used in enterprise networks.
 
-
+---
 
 ## Virtual Network Architecture
 
