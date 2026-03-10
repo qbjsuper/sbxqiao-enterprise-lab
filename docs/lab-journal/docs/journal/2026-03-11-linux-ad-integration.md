@@ -259,3 +259,21 @@ Active Directory
 3. Implement Linux file sharing using Samba with AD authentication
 4. Introduce privileged access workstations (PAW)
 5. Automate Linux domain join using Ansible
+
+024111032026
+Stage: Linux Active Directory Integration Completed
+
+Server: sbx-lx1
+
+Achievements:
+- Ubuntu server joined to Active Directory domain sbxqiao.lab
+- Kerberos authentication verified
+- SSSD configured for Linux identity services
+- Samba installed and configured as AD member file server
+- Winbind enabled for SMB domain authentication
+- Domain trust validated
+- AD users visible via wbinfo
+- SMB share accessible from Windows client sbx-cl1
+
+Result:
+Linux server successfully integrated with AD and serving SMB shares using domain authentication.
